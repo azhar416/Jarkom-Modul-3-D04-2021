@@ -6,7 +6,7 @@
 
 # MODUL 3
 
-![topology](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/topology.png)
+![topology](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/topology.PNG)
 
 ## Nomor 1
 Buat EniesLobby sebagai DNS Server, Jipangu sebagai DHCP Server, Water7 sebagai Proxy Server.
