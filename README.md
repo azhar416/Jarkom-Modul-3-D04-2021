@@ -17,9 +17,24 @@ Pertama membuat Topologi seperti gambar diatas.
 
 untuk settingan DHCP Server (Jipangu) :
 
+menginstall isc-dhcp-server
+
+```
+apt-get update
+apt-get install isc-dhcp-server
+```
+untuk settingan interfacenya seperti berikut
+
 ![1-dhcp](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/1-dhcp.PNG)
 
-untuk settingan Proxy Server :
+untuk settingan Proxy Server (Water7):
+
+menginstall squid untuk proxy-nya
+
+```
+apt-get update
+apt-get install squid
+```
 
 ## Nomor 2
 
@@ -37,6 +52,7 @@ Client yang melalui Switch1 mendapatkan range IP dari 10.23.1.20 - 10.23.1.99 da
 ### Jawab
 untuk yang nomor 3 yang perlu diatur konfigurasinya adalah dengan mengatur konfigurasi pada `/etc/dhcp/dhcpd.conf` lalu mengatur subnet pada 10.23.1.0 di option-domain-name-server menjadi
 seperti berikut
+
 ![jipangu setting](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/jipangu-setting.PNG)
 
 ## Nomor 4
@@ -48,12 +64,14 @@ untuk yang nomor 4 yang perlu diatur konfigurasinya adalah dengan mengatur konfi
 seperti berikut
 
 ![jipangu setting no 4](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/jipangu-setting.PNG)
+
 ## Nomor 5
 
 Client mendapatkan DNS dari EniesLobby dan client dapat terhubung dengan internet melalui DNS tersebut.
 
 ### Jawab
- pada nomer 5 hal yang perlu dilakukan adalah mengubah settingan pada `/etc/bind/named.conf.options` dan menambahkan forwaders pada settingan menjadi seperti berikut
+pada nomer 5 hal yang perlu dilakukan adalah mengubah settingan pada `/etc/bind/named.conf.options` dan menambahkan forwaders pada settingan menjadi seperti berikut
+
 ![jipangu setting no 4](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/enieslobby-internet.PNG)
    
 ## Nomor 6
