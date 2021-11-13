@@ -35,31 +35,45 @@ Untuk membuat Foosha sebagai DHCP Relay dapat dilakukan sebagai berikut :
 Client yang melalui Switch1 mendapatkan range IP dari 10.23.1.20 - 10.23.1.99 dan 10.23.1.150 - 10.23.1.169.
 
 ### Jawab
+untuk yang nomor 3 yang perlu diatur konfigurasinya adalah dengan mengatur konfigurasi pada `/etc/dhcp/dhcpd.conf` lalu mengatur subnet pada 10.23.1.0 di option-domain-name-server menjadi
+seperti berikut
+![jipangu setting](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/jipangu-setting.PNG)
 
 ## Nomor 4
 
 Client yang melalui Switch3 mendapatkan range IP dari 10.23.3.30 - 10.23.3.50.
 
 ### Jawab
+untuk yang nomor 4 yang perlu diatur konfigurasinya adalah dengan mengatur konfigurasi pada `/etc/dhcp/dhcpd.conf` lalu mengatur subnet pada 10.23.3.0 di option-domain-name-server menjadi
+seperti berikut
 
+![jipangu setting no 4](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/jipangu-setting.PNG)
 ## Nomor 5
 
 Client mendapatkan DNS dari EniesLobby dan client dapat terhubung dengan internet melalui DNS tersebut.
 
 ### Jawab
-
+ pada nomer 5 hal yang perlu dilakukan adalah mengubah settingan pada `/etc/bind/named.conf.options` dan menambahkan forwaders pada settingan menjadi seperti berikut
+![jipangu setting no 4](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/enieslobby-internet.PNG)
+   
 ## Nomor 6
 
 Lama waktu DHCP server meminjamkan alamat IP kepada Client yang melalui Switch1 selama 6 menit sedangkan pada client yang melalui Switch3 selama 12 menit. Dengan waktu maksimal yang dialokasikan untuk peminjaman alamat IP selama 120 menit.
 
 ### Jawab
+bisa diliat pada konfigurasi pada `/etc/dhcp/dhcpd.conf` pada default-lease time dan max lease time dan mengatur sesuai seperti pada soal
+
+![jipangu setting no 6](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/jipangu-setting.PNG)
 
 ## Nomor 7
 
 Skypie sebagai server untuk jual - beli dengan alamat IP 10.23.3.69 (tetap).
 
 ### Jawab
+caranya adalah dengan membuat host skypie pada jipangu dalam file `/etc/dhcp/dhcpd.conf` dan untuk hardwareaddress dapat dengan `ip a` pada skypie dan menjadi seperti berikut	
 
+
+![jipangu setting no 6](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/jipangu-setting.PNG)
 ## Nomor 8
 
 Loguetown digunakan sebagai client Proxy. Proxy harus bisa diakses dengan nama **jualbelikapal.d04.com** dengan port = 5000.
