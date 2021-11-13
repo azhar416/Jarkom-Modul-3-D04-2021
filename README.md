@@ -13,7 +13,13 @@
 Buat EniesLobby sebagai DNS Server, Jipangu sebagai DHCP Server, Water7 sebagai Proxy Server.
 
 ### Jawab
+Pertama membuat Topologi seperti gambar diatas.
 
+untuk settingan DHCP Server (Jipangu) :
+
+![1-dhcp](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/1-dhcp.PNG)
+
+untuk settingan Proxy Server :
 
 ## Nomor 2
 
