@@ -43,6 +43,8 @@ Buat Foosha sebagai DHCP Relay.
 ### Jawab
 Untuk membuat Foosha sebagai DHCP Relay dapat dilakukan sebagai berikut :
 
+menginstall `isc-dhcp-relay` kemudian melakukan setting sebagai berikut :
+
 ![2-relay](https://github.com/azhar416/Jarkom-Modul-3-D04-2021/blob/main/img/2-relay.PNG)
 
 ## Nomor 3
